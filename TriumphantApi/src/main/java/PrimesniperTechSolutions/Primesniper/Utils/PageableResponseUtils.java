@@ -8,7 +8,7 @@ import java.time.ZonedDateTime;
 @Slf4j
 public class PageableResponseUtils {
 
-    public static ResponseObject successResponse(Object data, String message, int totalPages, int currentPage, int pageSize, int pages) {
+    public static ResponseObject successResponse(Object data, String message, int totalPages, int currentPage, int pageSize, int totalRecords) {
         return ResponseObject.builder()
                 .data(data)
                 .statusCode(200)
@@ -17,6 +17,7 @@ public class PageableResponseUtils {
                 .totalPages(totalPages)
                 .currentPage(currentPage)
                 .pageSize(pageSize)
+                .totalRecords(totalRecords)
                 .build();
     }
 

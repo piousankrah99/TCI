@@ -17,4 +17,5 @@ public class ResponseObject {
     private Integer totalPages; // Total number of pages
     private Integer currentPage; // Current page number
     private Integer pageSize; // Page size
+    private Integer totalRecords; // Page size
 }
